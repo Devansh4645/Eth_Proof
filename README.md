@@ -24,7 +24,7 @@ function mint(address recipient, uint amount) public {
 }
 
 
-### Mint
+### Burn
 
 The burn function destroys tokens from a specified address. It decreases the total supply and updates the balance of the given address. It ensures that the address has enough tokens to burn.
 
