@@ -24,7 +24,11 @@ function mint(address recipient, uint amount) public {
 }
 
 
+### Mint
 
+The burn function destroys tokens from a specified address. It decreases the total supply and updates the balance of the given address. It ensures that the address has enough tokens to burn.
+
+```solidity
 function burn(address account, uint256 amount) public {
     require(addressBalances[account] >= amount, "Balance is too low to burn the requested amount.");
     totalTokenSupply -= amount;
